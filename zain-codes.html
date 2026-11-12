@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>دليل أكواد زين وخدمة العملاء 1234 - زين الأردن | JoTelecom</title>
+  <link rel="icon" type="image/png" href="assets/img/zain-logo.png">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+  </style>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary-fixed":"#6ffbbe","on-error":"#ffffff","primary-fixed-dim":"#5dd8db","secondary-fixed":"#dae2fd","outline-variant":"#bcc9c9","surface-container-lowest":"#ffffff","on-tertiary-container":"#003320","inverse-on-surface":"#eaf1ff","primary-container":"#00a3a6","on-background":"#0b1c30","on-secondary":"#ffffff","secondary-fixed-dim":"#bec6e0","on-primary":"#ffffff","on-primary-container":"#003132","surface":"#f8f9ff","primary-fixed":"#7df5f8","tertiary":"#006c49","primary":"#00696b","tertiary-fixed-dim":"#4edea3","on-tertiary":"#ffffff","on-surface":"#0b1c30","on-secondary-fixed-variant":"#3f465c","on-surface-variant":"#3d4949","outline":"#6d7a7a","surface-variant":"#d3e4fe","surface-tint":"#00696b","error":"#ba1a1a","surface-container-low":"#eff4ff","on-primary-fixed-variant":"#004f51","inverse-surface":"#213145","on-secondary-fixed":"#131b2e","surface-bright":"#f8f9ff","on-error-container":"#93000a","on-tertiary-fixed":"#002113","error-container":"#ffdad6","surface-container":"#e5eeff","on-secondary-container":"#5c647a","inverse-primary":"#5dd8db","surface-dim":"#cbdbf5","secondary-container":"#dae2fd","on-primary-fixed":"#002021","on-tertiary-fixed-variant":"#005236","secondary":"#565e74","tertiary-container":"#00a773","surface-container-highest":"#d3e4fe","background":"#f8f9ff","surface-container-high":"#dce9ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"1rem","space-sm":"0.5rem","gutter":"1.5rem","space-md":"1rem","margin":"2rem","gutter-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","space-xl":"2.5rem"},"fontFamily":{"title-md":["Alexandria"],"headline-sm":["Alexandria"],"headline-lg-mobile":["Alexandria"],"body-lg":["Alexandria"],"headline-lg":["Alexandria"],"body-md":["Alexandria"],"label-sm":["Alexandria"],"body-sm":["Alexandria"],"headline-md":["Alexandria"],"display":["Alexandria"],"title-lg":["Alexandria"],"label-md":["Alexandria"],"label-lg":["Alexandria"]},"fontSize":{"title-md":["16px",{"lineHeight":"24px","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"display":["44px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"700"}],"title-lg":["18px",{"lineHeight":"26px","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}]}}}};</script>
+
+  <!-- Custom Site Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <div class="h-20 max-w-7xl mx-auto px-margin flex items-center justify-between gap-space-md">
+      <!-- Brand Logo -->
+      <a href="#gox-lite" data-tab="gox-lite" class="flex items-center gap-space-md shrink-0 cursor-pointer">
+        <img src="assets/img/zain-logo.png" onerror="this.src='https://lh3.googleusercontent.com/aida/ALJJyrCr75rIgNNVw5yq9ZhLSILam7VLC_P_wCqNRK5_ka0V3JY6iKaze7GU0QCkVPJAfGbEwIwW-CwP47XfxBfhGLSMN2_U5DKQYQ-a3loAqal3qeDq1d8Jy8GZRDJ7kfgL1CsjOEwuCBSASn8rBwZuFVeZ7dw0CK5LkCT9ejy88AQ6OE-Ekm4fT6xJllNqW1aFN-xgIT0jDtKNwqVi_yCFmCP-UexoEjthJ1Q7tzamjRJtXA'" alt="Zain Jordan Logo" class="h-10 w-auto object-contain">
+        <div class="flex flex-col">
+          <span class="font-title-md text-title-md text-on-surface leading-none">Zain Sales - JoTelecom</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant mt-space-xs">مستشار مبيعات عروض خطوط زين الأردن</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden xl:flex items-center gap-space-sm" data-portal-nav>
+        <a class="transition-colors bg-primary-container text-on-primary-container font-label-md rounded-full px-space-md py-space-xs cursor-pointer" data-tab="gox-lite" href="#gox-lite" aria-current="page">عرض GO X Lite 2 الحصري</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-tab="savings-calculator" href="#savings-calculator">حاسبة المقارنة والوفر</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-tab="cards-rates" href="#cards-rates">أسعار البطاقات والدول</a>
+        <a class="px-space-md py-space-xs rounded-full font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-tab="zain-codes" href="#zain-codes">دليل أكواد زين والدعم 1234</a>
+      </nav>
+
+      <!-- Header CTAs -->
+      <div class="flex items-center gap-space-sm shrink-0">
+        <a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="tel:1234">
+          <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+          <span>1234 الدعم المباشر</span>
+        </a>
+        <a class="flex items-center gap-space-xs px-space-md md:px-space-lg py-space-xs md:py-space-sm rounded-full bg-tertiary-container text-on-tertiary-container hover:bg-tertiary transition-colors font-label-md md:font-label-lg text-label-md md:text-label-lg shadow-[0_2px_8px_rgba(0,167,115,0.2)]" href="https://wa.me/message/QFLRIQPVI23NP1" rel="noopener noreferrer" target="_blank">
+          <span class="material-symbols-outlined text-[18px] md:text-[20px]">chat</span>
+          <span>اطلب خطك الآن</span>
+        </a>
+        <button id="mobile-menu-toggle" type="button" class="xl:hidden w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors focus:outline-none" aria-label="قائمة التصفح">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop -->
+  <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop fixed inset-0 bg-on-surface/40 backdrop-blur-sm z-50 xl:hidden"></div>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-drawer" class="mobile-drawer fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-surface z-50 xl:hidden flex flex-col shadow-2xl p-space-lg justify-between overflow-y-auto">
+    <div class="space-y-space-lg">
+      <div class="flex items-center justify-between pb-space-md border-b border-outline-variant/30">
+        <div class="flex items-center gap-space-sm">
+          <img src="assets/img/zain-logo.png" onerror="this.src='https://lh3.googleusercontent.com/aida/ALJJyrCr75rIgNNVw5yq9ZhLSILam7VLC_P_wCqNRK5_ka0V3JY6iKaze7GU0QCkVPJAfGbEwIwW-CwP47XfxBfhGLSMN2_U5DKQYQ-a3loAqal3qeDq1d8Jy8GZRDJ7kfgL1CsjOEwuCBSASn8rBwZuFVeZ7dw0CK5LkCT9ejy88AQ6OE-Ekm4fT6xJllNqW1aFN-xgIT0jDtKNwqVi_yCFmCP-UexoEjthJ1Q7tzamjRJtXA'" alt="Zain Jordan Logo" class="h-8 w-auto object-contain">
+          <div class="flex flex-col">
+            <span class="font-title-md text-title-md text-on-surface leading-none">Zain Sales</span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">JoTelecom</span>
+          </div>
+        </div>
+        <button id="mobile-drawer-close" class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" aria-label="إغلاق">
+          <span class="material-symbols-outlined text-[20px]">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-space-xs">
+        <a data-tab="gox-lite" href="#gox-lite" class="mobile-nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-primary-container text-on-primary-container font-label-lg transition-colors">
+          <span class="material-symbols-outlined text-[20px]">verified</span>
+          <span>عرض GO X Lite 2 الحصري</span>
+        </a>
+        <a data-tab="savings-calculator" href="#savings-calculator" class="mobile-nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container transition-colors font-label-lg">
+          <span class="material-symbols-outlined text-[20px]">calculate</span>
+          <span>حاسبة المقارنة والوفر</span>
+        </a>
+        <a data-tab="cards-rates" href="#cards-rates" class="mobile-nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container transition-colors font-label-lg">
+          <span class="material-symbols-outlined text-[20px]">credit_card</span>
+          <span>أسعار البطاقات والدول</span>
+        </a>
+        <a data-tab="zain-codes" href="#zain-codes" class="mobile-nav-link flex items-center gap-space-sm px-space-md py-space-sm rounded-xl text-on-surface hover:bg-surface-container transition-colors font-label-lg">
+          <span class="material-symbols-outlined text-[20px]">dialpad</span>
+          <span>دليل أكواد زين والدعم 1234</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-space-lg border-t border-outline-variant/30 space-y-space-sm">
+      <a href="tel:1234" class="w-full flex items-center justify-center gap-space-xs py-space-sm rounded-full bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors">
+        <span class="material-symbols-outlined text-[18px] text-primary">call</span>
+        <span>1234 الدعم الفني المباشر</span>
+      </a>
+      <a href="https://wa.me/message/QFLRIQPVI23NP1" rel="noopener noreferrer" target="_blank" class="w-full flex items-center justify-center gap-space-xs py-space-sm rounded-full bg-tertiary-container text-on-tertiary-container font-label-md text-label-md hover:bg-tertiary transition-colors shadow-sm">
+        <span class="material-symbols-outlined text-[18px]">chat</span>
+        <span>اطلب خطك عبر واتساب</span>
+      </a>
+      <p class="text-center font-label-sm text-label-sm text-on-surface-variant pt-space-xs">وكيل ومستشار مبيعات معتمد - المملكة الأردنية الهاشمية</p>
+    </div>
+  </div>
+  <main class="w-full pt-20 bg-surface">
+    <div id="view-zain-codes" class="portal-view active">
+<div class="flex flex-col w-full">
+<div class="max-w-7xl mx-auto px-margin py-space-lg w-full space-y-space-xl">
+<!-- Support Disclaimer / Separation Notice Banner -->
+<section class="relative overflow-hidden rounded-xl bg-surface-container-high p-space-lg md:p-space-xl shadow-md">
+<div class="absolute -top-12 -left-12 w-48 h-48 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-16 -right-16 w-56 h-56 rounded-full bg-secondary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="space-y-space-sm max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-error-container text-on-error-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>تنويه رسمي لتوجيه المشتركين والدعم</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">
+            دليل أكواد زين السريعة والدعم الفني 1234
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+<strong class="font-title-md text-on-surface">تنويه هام:</strong> هذا القسم مخصص للمعلومات العامة ورموز الخدمات السريعة لجميع مشتركي زين الأردن. للدعم الفني، الاستفسارات عن الفواتير الحالية، أو مشاكل الخطوط القائمة، يرجى التواصل مباشرة مع مركز الاتصال الرسمي لشركة زين الأردن عبر الرقم 
+            <span class="font-title-md text-primary" dir="ltr">1234</span> (أو <span class="font-title-md text-primary" dir="ltr">0795797979</span>). 
+            رقم الواتساب الخاص بنا مخصص حصرياً لطلبات ومبيعات خطوط GO X الجديدة وعروض التحويل واستلام وتوصيل الشرائح.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row lg:flex-col gap-space-sm shrink-0">
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-sm font-label-lg text-label-lg group" href="tel:1234">
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:scale-110">call</span>
+<span class="font-title-md text-title-md">الاتصال برقم الدعم 1234</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-sm px-space-lg py-space-sm rounded-full bg-surface text-on-surface hover:bg-surface-container-highest transition-all shadow-sm font-label-lg text-label-lg group" href="tel:0795797979">
+<span class="material-symbols-outlined text-[20px] text-primary transition-transform group-hover:rotate-12">phone_iphone</span>
+<span class="font-title-md text-title-md" dir="ltr">079 579 7979</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Side-by-Side Sales vs Support Routing Matrix -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- 1234 Customer Support Card -->
+<div class="relative bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-1.5 bg-secondary"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[26px]">headset_mic</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-space-xs rounded-full bg-surface-container text-on-surface-variant">مجاني لمشتركي زين</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">متى تتصل بمركز خدمة عملاء زين (1234)؟</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">الدعم الفني المباشر، الفواتير، ومتابعة الخطوط الحالية</p>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>حل أعطال تغطية الشبكة وبطاقات الـ SIM التالفة أو المفقودة</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>الاستفسار عن تفاصيل الفواتير الشهرية والذمم المالية القائمة</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>تفعيل وإيقاف الخدمات الإضافية والاشتراكات المباشرة</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>استرجاع رمز PUK وحظر الخط في حال فقدان الهاتف</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">متاح 24 ساعة طوال أيام الأسبوع</span>
+<a class="font-label-lg text-label-lg text-primary flex items-center gap-space-xs hover:underline" href="tel:1234">
+<span>اتصال مباشر</span>
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+</a>
+</div>
+</div>
+<!-- JoTelecom WhatsApp Sales Card -->
+<div class="relative bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-1.5 bg-tertiary-container"></div>
+<div class="space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-full bg-tertiary-fixed/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-[26px]">shopping_bag</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<img src="https://lh3.googleusercontent.com/aida/ALJJyrCr75rIgNNVw5yq9ZhLSILam7VLC_P_wCqNRK5_ka0V3JY6iKaze7GU0QCkVPJAfGbEwIwW-CwP47XfxBfhGLSMN2_U5DKQYQ-a3loAqal3qeDq1d8Jy8GZRDJ7kfgL1CsjOEwuCBSASn8rBwZuFVeZ7dw0CK5LkCT9ejy88AQ6OE-Ekm4fT6xJllNqW1aFN-xgIT0jDtKNwqVi_yCFmCP-UexoEjthJ1Q7tzamjRJtXA" alt="Zain Jordan Logo" class="h-6 w-auto object-contain">
+<span class="font-label-sm text-label-sm px-space-sm py-space-xs rounded-full bg-tertiary-fixed-dim/30 text-on-tertiary-fixed">مستشار مبيعات معتمد</span>
+</div>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface">متى تتواصل مع مستشار مبيعات JoTelecom؟</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">الاشتراكات الجديدة، ترقية الباقات، وحجز وتوصيل الخطوط</p>
+</div>
+<ul class="space-y-space-sm font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>طلب واشتراك فوري في خط GO X Lite 2 الحصري (11.90 د.أ)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>تحويل خطك الحالي من الشركات الأخرى إلى شبكة زين بنفس الرقم</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>خدمة التوصيل وتوقيع العقد عند باب المنزل أو مقر العمل</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>استشارات اختيار باقات الفايبر والراوترات المتنقلة 4G/5G</span>
+</li>
+</ul>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-label-md text-label-md text-tertiary font-medium">استجابة سريعة عبر واتساب</span>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-tertiary-container text-on-tertiary-container hover:bg-tertiary transition-colors font-label-md text-label-md shadow-sm" href="https://wa.me/message/QFLRIQPVI23NP1" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>محادثة واتساب مبيعات</span>
+</a>
+</div>
+</div>
+</section>
+<!-- USSD Code Directory & Search -->
+<section class="space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">دليل رموز USSD السريعة لزين الأردن</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">انقر لنسخ الكود أو تشغيله مباشرة من هاتفك لإجراء المعاملات السريعة دون اتصال بالإنترنت</p>
+</div>
+<!-- Live Search Input -->
+<div class="relative min-w-[280px] sm:min-w-[340px]">
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pr-11 pl-space-md py-space-sm bg-surface-container-lowest text-on-surface placeholder:text-outline-variant font-body-md text-body-md rounded-full shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="ussdSearchInput" placeholder="ابحث بالاسم أو الرمز (مثال: رصيد، شحن، 116، دقائق)..." type="text">
+<button class="hidden absolute left-space-md top-1/2 -translate-y-1/2 text-outline-variant hover:text-on-surface" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs" id="filterPillsContainer">
+<button class="filter-pill active px-space-md py-space-xs rounded-full font-label-md text-label-md bg-on-surface text-surface transition-colors" data-filter="all">الكل (10)</button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" data-filter="رصيد">أرصدة وحزم</button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" data-filter="شحن">شحن وتجديد</button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" data-filter="حسابي">بيانات الخط والتحويل</button>
+<button class="filter-pill px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" data-filter="دعم">خدمة العملاء</button>
+</div>
+<!-- Codes Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-space-md" id="codesGrid">
+<!-- Card 1 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="رصيد اساسي مسبق الدفع كود *116# معرفة رصيد حسابي">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">استعلام الرصيد</span>
+<span class="material-symbols-outlined text-[18px] text-outline">account_balance_wallet</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">معرفة الرصيد الأساسي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">استعلام فوري عن رصيدك النقدي لخطوط زين مسبقة الدفع وتاريخ الصلاحية.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*116#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*116%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*116#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="دقائق حزم متبقية رصيد مكالمات *116*1#">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">رصيد الدقائق</span>
+<span class="material-symbols-outlined text-[18px] text-outline">timer</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">رصيد الحزم والدقائق المتبقية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">الاطلاع على الدقائق المتبقية على شبكة زين والشبكات المحلية الأخرى والرسائل.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*116*1#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*116*1%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*116*1#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="انترنت حزم بيانات جيجابايت رصيد *116*2# نت">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">رصيد الإنترنت</span>
+<span class="material-symbols-outlined text-[18px] text-outline">language</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">رصيد الإنترنت وحزم البيانات</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">معرفة الجيجابايت المتبقية من الحزمة العامة وحزم السوشال ميديا وتاريخ التجديد.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*116*2#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*116*2%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*116*2#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="تجديد مبكر اشتراك شهري باقة شحن *358#">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">إدارة الاشتراك</span>
+<span class="material-symbols-outlined text-[18px] text-outline">restart_alt</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">التجديد المبكر للاشتراك الشهري</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تجديد الحزمة قبل موعدها في حال نفاذ الرصيد أو الجيجابايت مع توفر رصيد كافٍ.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*358#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*358%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*358#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="شحن بطاقة زين كرت كود تعبئة *114*">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">شحن وتعبئة</span>
+<span class="material-symbols-outlined text-[18px] text-outline">credit_card</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">شحن بطاقة زين مسبقة الدفع</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">تعبئة رصيد بطاقات الشحن الورقية أو الإلكترونية مباشرة عن طريق إدخال الرقم السري.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*114*كود#</span>
+<div class="flex items-center gap-space-xs">
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*114*">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ الصيغة</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="رقمي رقم هاتفي الشخصي خطي حسابي *178#">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">معلومات الخط</span>
+<span class="material-symbols-outlined text-[18px] text-outline">badge</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">معرفة رقم هاتفي الشخصي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">إظهار رقم شريحة الهاتف الحالية مباشرة على الشاشة دون الحاجة لإجراء مكالمة.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*178#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*178%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*178#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="اسم التعرفة الباقة الحالية خطة الاسعار حسابي *113#">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">اسم التعرفة</span>
+<span class="material-symbols-outlined text-[18px] text-outline">info</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">معرفة التعرفة أو الحزمة الحالية</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">التأكد من اسم خطتك المشترك بها حالياً وسعر تجديدها الشهري وتفاصيلها.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*113#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*113%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*113#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="قائمة الخدمات الشاملة عروض انترنت خدمات *111#">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">بوابة الخدمات</span>
+<span class="material-symbols-outlined text-[18px] text-outline">list_alt</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">قائمة خدمات زين الشاملة</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">البوابة التفاعلية الكاملة للاشتراك في عروض وحزم الإنترنت الإضافية وتجوال البيانات.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*111#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*111%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*111#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="الغاء تحويل المكالمات ضبط الرنين مشاكل الاتصال ##002#">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">إلغاء التحويل</span>
+<span class="material-symbols-outlined text-[18px] text-outline">phone_disabled</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">إلغاء جميع تحويلات المكالمات</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">إعادة ضبط واستقبال المكالمات وإلغاء أي تحويل تلقائي للبريد الصوتي أو أرقام أخرى.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">##002#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:%23%23002%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="##002#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 10 -->
+<div class="code-card bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between" data-keywords="خدمة العملاء مركز اتصال دعم فني 1234">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container text-primary font-semibold">مركز الاتصال</span>
+<span class="material-symbols-outlined text-[18px] text-outline">support_agent</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">خدمة عملاء زين المباشر</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">محادثة موظف الدعم الفني لحل المشاكل التقنية والاستفسار عن الحسابات.</p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">1234</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:1234" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="1234">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- No Results State -->
+<div class="hidden py-space-xl text-center bg-surface-container-low rounded-xl" id="noResultsState">
+<span class="material-symbols-outlined text-outline-variant text-[48px]">search_off</span>
+<h4 class="font-title-md text-title-md text-on-surface mt-space-sm">لم يتم العثور على أي رمز مطابق</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">جرب استخدام كلمات مفتاحية أخرى مثل "رصيد" أو "شحن" أو اتصل بالرقم 1234 للمساعدة.</p>
+</div>
+</section>
+<!-- Visual Divider / Conversion Banner -->
+<section class="space-y-space-md bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-sm border border-outline-variant/30">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div class="space-y-space-xs">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-secondary-container text-on-secondary-fixed font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-primary">flight_takeoff</span>
+<span>دعم المشتركين في الخارج</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">أرقام الطوارئ والدعم الفني أثناء السفر والتجوال الدولي</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">قنوات اتصال مخصصة ومباشرة لمساعدة مشتركي زين الأردن أينما كانوا حول العالم</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-semibold">من خارج الأردن</span>
+<span class="material-symbols-outlined text-[20px] text-primary">public</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">الدعم المباشر أثناء التجوال</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">مخصص للمشتركين خارج المملكة للتواصل السريع مع فريق الدعم الفني لحل مشاكل الاتصال والتجوال.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between bg-surface-container-lowest rounded-lg p-space-sm">
+<span class="font-title-lg text-title-lg text-primary font-bold" dir="ltr">+962 79 5797979</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:+962795797979" title="اتصال">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="+962795797979">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-semibold">الرقم الموحد</span>
+<span class="material-symbols-outlined text-[20px] text-primary">phone_in_talk</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">مركز خدمة العملاء الموحد</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">للاتصال من داخل الأردن أو عبر الهواتف الأرضية وشبكات المحمول الأخرى مع مركز رعاية عملاء زين.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between bg-surface-container-lowest rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary font-bold" dir="ltr">079 000 1234</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">أو 1234 (زين)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:0790001234" title="اتصال">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="0790001234">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-semibold">باقات التجوال</span>
+<span class="material-symbols-outlined text-[20px] text-primary">travel_explore</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface pt-space-xs">حزم الإنترنت والتجوال الدولي</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">استعلام وتفعيل حزم التجوال للإنترنت والمكالمات حسب الدولة المتجه إليها قبل السفر أو أثنائه.</p>
+</div>
+<div class="pt-space-xs flex items-center justify-between bg-surface-container-lowest rounded-lg p-space-sm">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-wider" dir="ltr">*111#</span>
+<div class="flex items-center gap-space-xs">
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:text-primary transition-colors" href="tel:*111%23" title="اتصال مباشر">
+<span class="material-symbols-outlined text-[18px]">call</span>
+</a>
+<button class="copy-code-btn px-space-sm py-1 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm transition-colors flex items-center gap-1" data-code="*111#">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>نسخ</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container flex items-start gap-space-md border border-outline-variant/30">
+<span class="material-symbols-outlined text-primary text-[24px] shrink-0 mt-space-xs">tips_and_updates</span>
+<div class="space-y-space-xs">
+<h4 class="font-title-md text-title-md text-on-surface">نصائح وإرشادات هامة للمسافرين</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+تأكد من تفعيل خاصية <strong>تجوال البيانات (Data Roaming)</strong> من إعدادات الهاتف وشبكة الخلوي عند الوصول، وتفعيل خدمة <strong>VoLTE</strong> قبل الإقلاع لضمان وضوح المكالمات الصوتية بجودة HD عبر شبكات LTE المتطورة دون انقطاع. في حال احتجت لتجديد رصيدك أو تفعيل حزمة تجوال، يمكنك استخدام كود <span class="font-semibold text-primary" dir="ltr">*111#</span> مجاناً في معظم الوجهات.
+</p>
+</div>
+</div>
+</section><section class="relative bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span>توصيل فوري لكافة محافظات الأردن</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">هل ترغب بالاشتراك أو التحويل إلى باقة GO X Lite 2؟</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">احصل على 55 جيجابايت + دقائق غير محدودة بسعر 11.90 دينار أردني شهرياً شاملاً الضريبة مع شريحة مجانية وتوصيل مباشر لموقعك.</p>
+</div>
+<a class="shrink-0 inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md font-label-lg text-label-lg" href="https://wa.me/message/QFLRIQPVI23NP1" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>اطلب خطك الآن من المستشار</span>
+</a>
+</section>
+<!-- Frequently Asked Questions (FAQ) Accordion -->
+<section class="space-y-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">الأسئلة الشائعة حول الخطوط والتحويل</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">إجابات دقيقة ومفصلة على أهم استفسارات المشتركين والراغبين بالانضمام</p>
+</div>
+<div class="space-y-space-sm" id="faqAccordion">
+<!-- Item 1 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-md md:p-space-lg flex items-center justify-between text-right gap-space-md">
+<span class="font-title-md text-title-md text-on-surface">كيف يمكنني تحويل خطي الحالي إلى عرض GO X Lite 2 بنفس الرقم؟</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md md:px-space-lg md:pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p>يمكنك التحويل بسهولة فائقة سواء كنت مشتركاً في شبكة أخرى (أمنية أو أورانج) أو لديك خط زين قديم. كل ما عليك فعله هو إرسال صورة الهوية ورقم الهاتف لمستشار المبيعات عبر الواتساب. نقوم برفع طلب نقل الرقم (MNP) فوراً وإصدار شريحة جديدة مع الاحتفاظ الكامل برقمك القديم دون أي انقطاع بالخدمة.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-md md:p-space-lg flex items-center justify-between text-right gap-space-md">
+<span class="font-title-md text-title-md text-on-surface">متى يبدأ احتساب الفاتورة الشهرية وما هي فترة السماح؟</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md md:px-space-lg md:pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p>يبدأ احتساب الاشتراك من اللحظة الأولى لتفعيل الشريحة وتوقيع العقد. يتم إصدار الفاتورة بداية كل شهر ميلادي بصورة دورية، مع توفير فترة سماح مرنة تتيح لك سداد الفاتورة عبر تطبيق زين Jo أو إي فواتيركم أو البطاقات الائتمانية دون انقطاع الحزم أو الدقائق.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-md md:p-space-lg flex items-center justify-between text-right gap-space-md">
+<span class="font-title-md text-title-md text-on-surface">هل توجد أي مبالغ خفية أو زيادات على سعر 11.90 دينار؟</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md md:px-space-lg md:pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p>إطلاقاً! السعر المعلن (11.90 دينار أردني شهرياً) هو سعر نهائي وصافي شامل لضريبة المبيعات وضريبة الاتصالات الحكومية. لا توجد رسوم تفعيل إضافية ولا رسوم خفية على عقد الاشتراك السنوي، ما يضمن لك استقراراً مالياً كاملاً وشفافية مطلقة في فواتيرك.</p>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="faq-item bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all">
+<button class="faq-toggle w-full p-space-md md:p-space-lg flex items-center justify-between text-right gap-space-md">
+<span class="font-title-md text-title-md text-on-surface">كيف يتم تسليم الشريحة وتوقيع العقد في المنزل أو العمل؟</span>
+<span class="material-symbols-outlined text-outline transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-md pb-space-md md:px-space-lg md:pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p>يوفر فريق JoTelecom خدمة المندوب الميداني؛ بمجرد تثبيت الطلب عبر الواتساب، يصلك المندوب المعتمد إلى موقعك خلال 24 ساعة في أي منطقة بالمملكة. يقوم المندوب بمطابقة الهوية الشخصية رسمياً وتوقيع العقد وتسليم الشريحة المفعلة فوراً لتتمكن من استخدام الإنترنت والمكالمات في نفس اللحظة.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="w-full bg-surface-container-low text-on-surface mt-space-xl">
+    <div class="max-w-7xl mx-auto px-margin py-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl">
+        <div>
+          <div class="flex items-center gap-space-sm mb-space-sm">
+            <img src="assets/img/zain-logo.png" onerror="this.src='https://lh3.googleusercontent.com/aida/ALJJyrCr75rIgNNVw5yq9ZhLSILam7VLC_P_wCqNRK5_ka0V3JY6iKaze7GU0QCkVPJAfGbEwIwW-CwP47XfxBfhGLSMN2_U5DKQYQ-a3loAqal3qeDq1d8Jy8GZRDJ7kfgL1CsjOEwuCBSASn8rBwZuFVeZ7dw0CK5LkCT9ejy88AQ6OE-Ekm4fT6xJllNqW1aFN-xgIT0jDtKNwqVi_yCFmCP-UexoEjthJ1Q7tzamjRJtXA'" alt="Zain Jordan Logo" class="h-10 w-auto object-contain">
+            <span class="font-title-md text-title-md text-on-surface">Zain Sales - JoTelecom</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            مستشارك الرقمي المعتمد لاختيار باقات خطوط زين الأردن الذكية، عروض الإنترنت الفائقة والراوترات المنزلية مع التوصيل الفوري لكافة المحافظات.
+          </p>
+          <div class="flex items-center gap-space-xs font-label-sm text-label-sm text-primary">
+            <span class="material-symbols-outlined text-[16px]">verified</span>
+            <span>وكيل مبيعات معتمد - خدمات المشتركين</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-title-md text-title-md text-on-surface mb-space-md">روابط سريعة</h4>
+          <ul class="space-y-space-xs">
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors block cursor-pointer" data-tab="gox-lite" href="#gox-lite">باقة GO X Lite 2 الجديدة</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors block cursor-pointer" data-tab="savings-calculator" href="#savings-calculator">حاسبة التوفير وتكلفة الدقائق</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors block cursor-pointer" data-tab="cards-rates" href="#cards-rates">أسعار التعرفة الدولية وبطاقات الشحن</a></li>
+            <li><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors block cursor-pointer" data-tab="zain-codes" href="#zain-codes">أكواد الخدمات السريعة USSD والدعم 1234</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-title-md text-title-md text-on-surface mb-space-md">مركز الدعم والمساعدة</h4>
+          <ul class="space-y-space-xs">
+            <li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-primary">support_agent</span>
+              <span>خدمة المشتركين المجانية: <a href="tel:1234" class="text-primary hover:underline font-bold">1234</a></span>
+            </li>
+            <li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-primary">phone_iphone</span>
+              <span>من الشبكات الأخرى: <a href="tel:0795797979" class="text-primary hover:underline font-bold" dir="ltr">079 579 7979</a></span>
+            </li>
+            <li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+              <span>المملكة الأردنية الهاشمية - عمّان</span>
+            </li>
+            <li class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+              <span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+              <span>الطلبات متاحة 24/7 عبر واتساب</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-title-md text-title-md text-on-surface mb-space-md">الطلب الفوري والتوصيل</h4>
+          <p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            توصيل وتفعيل الشرائح والخطوط مباشرة إلى موقعك في كافة محافظات الأردن بأسرع وقت مع الحفاظ على رقمك الحالي.
+          </p>
+          <a class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container transition-colors font-label-md text-label-md" href="https://wa.me/message/QFLRIQPVI23NP1" rel="noopener noreferrer" target="_blank">
+            <span class="material-symbols-outlined text-[18px]">send</span>
+            <span>محادثة فورية مع المستشار</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-space-lg border-t border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-right">
+        <p class="font-body-sm text-body-sm text-on-surface-variant">
+          إخلاء مسؤولية: موقع JoTelecom هو منصة استشارية وتجارية لخدمات مبيعات خطوط وعروض شركة زين الأردن. كافة العلامات التجارية وحقوق الملكية لزين تعود للشركة الأم.
+        </p>
+        <p class="font-label-sm text-label-sm text-on-surface-variant shrink-0">
+          &copy; 2024 Zain Sales - JoTelecom. جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Buttons -->
+  <div class="fixed bottom-6 left-6 z-40 flex items-center gap-2">
+    <a href="https://wa.me/message/QFLRIQPVI23NP1" target="_blank" rel="noopener noreferrer" class="pulse-whatsapp flex items-center gap-space-xs px-space-md py-space-sm bg-[#25D366] text-white rounded-full shadow-2xl hover:scale-105 transition-transform" title="تواصل مباشرة عبر واتساب">
+      <span class="material-symbols-outlined text-[24px]">chat</span>
+      <span class="hidden md:inline font-label-md text-label-md font-bold">اطلب الآن عبر واتساب</span>
+    </a>
+  </div>
+
+  <button id="back-to-top" class="fixed bottom-6 right-6 z-40 w-11 h-11 bg-surface-container-highest text-on-surface rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all cursor-pointer" aria-label="الرجوع للأعلى">
+    <span class="material-symbols-outlined text-[20px]">arrow_upward</span>
+  </button>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- Main JavaScript App -->
+  <script src="js/app.js"></script>
+</body>
+</html>
